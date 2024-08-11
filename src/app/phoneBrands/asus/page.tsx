@@ -13,8 +13,6 @@ async function getData() {
 export default async function Page() {
     const smartphones = await getData();
 
-    console.log(smartphones[0].launchDate)
-
     const date = smartphones[0].launchDate
     const formattedDate = date.toISOString().slice(0, 10);
     console.log(formattedDate)
@@ -135,7 +133,7 @@ export default async function Page() {
                                         </svg>
 
                                         <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                                            Snapdragon 8 Gen 3
+                                            {smartphone.processor}
                                         </span>
                                     </a>
                                 </li>
