@@ -2,11 +2,21 @@ import prisma from "~/lib/db";
 import { Card } from "flowbite-react";
 
 async function getData() {
+    const startDate = new Date('2022-01-01');
+    const endDate = new Date('2024-12-31');
+
     const res = await prisma.smartphones.findMany({
         where: {
-            brand: 'Apple'
+            brand: 'Apple',
+            launchDate: {
+                gte: startDate,
+                lte: endDate
+            }
+        },
+        orderBy: {
+            launchDate: 'desc',
         }
-    });
+    })
     return res;
 }
 
@@ -135,7 +145,7 @@ export default async function Page() {
                                         </svg>
 
                                         <span className="ml-3 flex-1 px-2 whitespace-nowrap">
-                                            Snapdragon 8 Gen 3
+                                            {smartphone.processor}
                                         </span>
                                     </a>
                                 </li>

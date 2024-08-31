@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main className="bg-slate-200 min-h-screen text-black">
+      <div className="bg-slate-200 lg:h-8"></div>
       <div className="bg-slate-200">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Products</h2>
@@ -19,10 +20,13 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Apple</p>
             </Link>
-            <Link
+
+
+
+
+            {/* <Link
               href="/phoneBrands/asus"
               className="group"
             >
@@ -33,9 +37,11 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Asus</p>
-            </Link>
+            </Link> */}
+
+
+            
             <Link
               href="/phoneBrands/google"
               className="group"
@@ -47,10 +53,12 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Google</p>
             </Link>
-            <Link
+
+
+
+            {/* <Link
               href="/phoneBrands/poco"
               className="group"
             >
@@ -61,10 +69,12 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Poco</p>
-            </Link>
-            <Link
+            </Link> */}
+
+
+
+            {/* <Link
               href="/phoneBrands/realme"
               className="group"
             >
@@ -75,9 +85,11 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Realme</p>
-            </Link>
+            </Link> */}
+
+
+
             <Link
               href="/phoneBrands/samsung"
               className="group"
@@ -89,10 +101,12 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Samsung</p>
             </Link>
-            <Link
+
+
+            
+            {/* <Link
               href="/phoneBrands/vivo"
               className="group"
             >
@@ -103,9 +117,11 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Vivo</p>
-            </Link>
+            </Link> */}
+            
+            
+            
             <Link
               href="/phoneBrands/xiaomi"
               className="group"
@@ -117,7 +133,6 @@ export default function Page() {
                   className="h-full w-full object-cover object-center group-hover:opacity-75"
                 ></img>
               </div>
-              {/* <h3 className="mt-4 text-sm text-gray-700">Earthen Bottle</h3> */}
               <p className="mt-4 text-3xl font-medium text-gray-900">Xiaomi</p>
             </Link>
           </div>
