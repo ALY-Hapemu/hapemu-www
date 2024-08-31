@@ -11,6 +11,7 @@ const navigation = [
   { name: "Semua Hape", href: "/phoneBrands" },
   { name: "Prosesor Terbaik", href: "/processor" },
   { name: "Kamera Terbaik", href: "/camera" },
+  { name: "Bandingkan Hape", href: "/scratch" },
 ];
 
 export function Navbar() {

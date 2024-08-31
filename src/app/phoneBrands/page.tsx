@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Page() {
   return (
     <main className="bg-slate-200 min-h-screen text-black">
+      <div className="bg-slate-200 lg:h-8"></div>
       <div className="bg-slate-200">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Products</h2>

@@ -272,12 +272,12 @@ export default function CameraRankingTable({
           </Card>
           <Card className="max-w-sm lg:max-w-md columns-2 m-auto mt-5 bg-blue-500">
             <h2 className="text-base font-semibold text-white lg:text-xl">
-              DXOMARK Camera Score: {selectedItem.dxomarkScore}
+              DXOMARK Camera Score: 149
             </h2>
           </Card>
           <Card className="max-w-sm lg:max-w-md columns-2 m-auto mt-5 bg-red-500">
             <h2 className="text-base font-semibold text-white lg:text-xl">
-              Antutu Score: {selectedItem.dxomarkScore}
+              Antutu Score: 1512459
             </h2>
           </Card>
         </div>

@@ -2,11 +2,21 @@ import prisma from "~/lib/db";
 import { Card } from "flowbite-react";
 
 async function getData() {
+    const startDate = new Date('2022-01-01');
+    const endDate = new Date('2024-12-31');
+
     const res = await prisma.smartphones.findMany({
         where: {
-            brand: 'Google'
+            brand: 'Google',
+            launchDate: {
+                gte: startDate,
+                lte: endDate
+            }
+        },
+        orderBy: {
+            launchDate: 'desc',
         }
-    });
+    })
     return res;
 }
 

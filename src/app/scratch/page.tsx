@@ -12,26 +12,12 @@ export default async function Page() {
     <main className="flex-1">
       <div className="container px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row items-start gap-6">
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold">Smartphone Rankings</h1>
-            <p className="text-muted-foreground">
-              Temukan smartphone dengan kamera terbaik berdasarkan nilai
-              DXOMark.
-            </p>
-            <div className="mt-4 bg-card p-4 rounded-lg">
-              <h3 className="text-lg font-semibold">Apa itu nilai DXOMark?</h3>
-              <p className="text-muted-foreground">
-                DXOMark adalah organisasi independen yang menguji dan menilai
-                kinerja kamera, tampilan, dan baterai dari smartphone. Nilai
-                keseluruhan DXOMark adalah ukuran komprehensif dari kemampuan
-                sebuah smartphone, dengan nilai yang lebih tinggi menunjukkan
-                kinerja yang lebih baik.
-              </p>
-            </div>
+          <div className="mt-4 bg-card p-4 rounded-lg lg:w-3/5 m-auto text-center">
+            <h1 className="lg:text-3xl font-semibold text-blue-600">Bandingkan 2 Hape, <br /> Pilih Hape yang mau dibandingkan</h1>
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex lg:w-4/5 m-auto">
           <CameraRankingTable ranking={ranking} />
           <CameraRankingTable ranking={ranking} />
         </div>
